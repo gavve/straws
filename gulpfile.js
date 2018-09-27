@@ -21,7 +21,7 @@ gulp.task('watch', function () {
 gulp.task('minify-images', () =>
     gulp.src('content/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./build/images'))
+        .pipe(gulp.dest('./build/sass/content/images'))
 );
 
 gulp.task("build-prod", ["sass", "minify-images"]);
