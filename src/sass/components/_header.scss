@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        top:20px;
+        right:20px;
+        width:calc(50% - 20px);
+        z-index:1020;
+    }
+    
+
+    &__logo {
+        display: none;
+        @include media-breakpoint-up(md) {
+            max-width: 100px;
+            display: block;
+        }
+        
+    }
+}

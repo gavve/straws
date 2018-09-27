@@ -1,0 +1,42 @@
+
+.straw-nav {
+
+    &__links {
+        display: none;
+        width:100%;
+        margin:0;
+        padding:0;
+
+        &--open {
+            display: block;
+        }
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+        
+    }
+
+    &__item {
+        padding:10px;
+    }
+
+    &__content {
+        display: flex;
+        
+        flex-wrap:wrap;
+        background-color: $color-white;
+        justify-content: flex-end;
+        -webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+
+        @include media-breakpoint-up(md) {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            justify-content: center;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+
+.page {
+
+    &__left {
+        height:40vh;
+        width:100%;
+        background-size:cover;
+        background-position: center;
+
+        @include media-breakpoint-up(md) {
+            width:50%;
+            float:left;
+            height:100vh;
+        }
+        
+
+        &--straws {
+            background-image: url("/content/images/wastelessstraws-2.jpg");
+        }
+
+        &--juice {
+            background-image: url("/content/images/wastelessstraws-3.jpg");
+        }
+
+        &--ocean {
+            background-image: url("/content/images/bg/AdobeStock_138443181.jpeg");
+        }
+
+        &--strawbox {
+            background-image: url("/content/images/wastelessstraws.jpg");
+        }
+
+        &--believe {
+            background-image: url("/content/images/bg/bg-ocean.jpg");
+        }
+        &--trees {
+            background-image: url("/content/images/bg/trees.jpg");
+        }
+    }
+
+    &__right {
+        flex:0 0 100%;
+        display: flex;
+        position: relative;
+        margin:auto;
+        height:60vh;
+
+        @include media-breakpoint-up(md) {
+            flex:0 0 50%;
+            width:50%;
+            height:100vh;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        height:auto;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width: 100%;
+        max-width:450px;
+        padding: 20px;
+    }
+}
