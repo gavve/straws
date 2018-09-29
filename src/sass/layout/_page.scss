@@ -22,6 +22,9 @@
 
         &--juice {
             background-image: url("images/wastelessstraws-3.jpg");
+            @include media-breakpoint-down(md) {
+                background-position:top;
+            }
         }
 
         &--ocean {
