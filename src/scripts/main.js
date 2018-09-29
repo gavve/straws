@@ -36,7 +36,7 @@ $(document).ready( function() {
             edgeFriction: 0.05,
             lazyLoad: 'progressive',
             swipeToSlide: true,
-            touchThreshold:2,
+            touchThreshold:1,
             appendDots: $('.straw-nav__links'),
             customPaging : function(slider, i) {
                 return '<a role="tab" id="slick-slide-control0'+i+'" aria-controls="slick-slide0'+i+'" aria-label="'+i+1+' of 6" tabindex="0" aria-selected="true">'+links[i]+'</a>';
