@@ -84,4 +84,4 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('build/images'));
 });
 
-gulp.task("build-prod", ["sass", "imagemin"]);
+gulp.task("build-prod", ['styles', 'movecss', 'imagemin']);

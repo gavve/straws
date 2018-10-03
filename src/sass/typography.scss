@@ -6,23 +6,42 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 h1 {
     font-size:3.2rem;
+    @include media-breakpoint-down(sm) {
+        font-size:2.2;
+    }
 }
 h2 {
     font-size:2.8rem;
+    @include media-breakpoint-down(sm) {
+        font-size:1.8;
+    }
 }
 h3 {
     font-size:2.2rem;
+    @include media-breakpoint-down(sm) {
+        font-size:1.4;
+    }
 }
 h4 {
     font-size:1.6rem;
+    @include media-breakpoint-down(sm) {
+        font-size:1.2;
+    }
 }
 h5 {
     font-size:1.2rem;
+    @include media-breakpoint-down(sm) {
+        font-size:1.0;
+    }
 }
 
 
 p,a {
     font-size:1.6rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size:1.1rem;
+    }
 }
 
 a {
